@@ -26,6 +26,9 @@ body {
 .bgr-orange {
   background-color: var(--orange);
 }
+.bgr-pale-orange {
+  background-color: var(--Pale-orange);
+}
 .tx-vark-blue {
   color:var(--very-vark-blue);
 }
