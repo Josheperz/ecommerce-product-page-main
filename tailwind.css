@@ -38,3 +38,9 @@ body {
 .tx-white {
   color:var(--White);
 }
+.icon-arrown {
+  width: 34px !important;
+  height: 34px !important;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+}
