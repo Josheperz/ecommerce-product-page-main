@@ -18,7 +18,7 @@
 <body>
   <header>
     <div class="w-full border-b top-16 position-absolute" ></div>
-    <nav class="navbar navbar-expand-md navbar-light p-0 pl-3 mr-1 mb-11">
+    <nav class="navbar navbar-expand-md navbar-light p-0 pl-3 mr-1 mb-11 lg:ml-5 ">
       <div class="container-fluid  pl-0 flex">
 
         <button class="navbar-toggler flex border-none p-1 mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,12 +53,12 @@
           
         </div>
       </div>      
-        <div class="flex flex-auto justify-end flex-end gap-x-5  pt-4">
-          <div class="w-8 h-8 pl-3">
-            <img class="w-5 cursor-pointer" src="../images/icon-cart.svg" alt="">
+        <div class="flex flex-auto justify-end flex-end gap-x-5  pt-2">
+          <div class="w-8 h-8 pl-3 ">
+            <img class="w-7 cursor-pointer pt-2" src="../images/icon-cart.svg" alt="">
           </div>
           <div class="w-8 h-8">
-            <img class="w-5 border-radius_avatar" src="../images/image-avatar.png" alt="">
+            <img class="w-7 border-radius_avatar " src="../images/image-avatar.png" alt="">
           </div>
         </div>
     </div>
@@ -68,11 +68,12 @@
  
 <main>
 <div class="grid grid-cols-1  md:grid-cols-2">
+  
 <!-- carousel -->
  
- <div class="container">
+ <div class="container  ">
   <div class="row justify-center">
-    <div id="carouselExampleCaptions" class="carousel slide col-sm-11 sm:mb-20 md:ml-24" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel p-0 slide col-sm-11 sm:mb-20 md:ml-24" data-bs-ride="carousel">
     
  <!-- main gallery -->
     <div class="relative ">
@@ -80,28 +81,28 @@
 
          <div class="carousel-item active relative float-left w-full">
            <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-             <img src="./../images/image-product-1.jpg" class="block w-full rounded-xl md:w-9/12"/>
+             <img src="./../images/image-product-1.jpg" class="block w-full sm:rounded-xl md:w-9/12"/>
              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixe "></div>
            </div>  
          </div>
 
          <div class="carousel-item relative float-left w-full">
            <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-             <img src="./../images/image-product-2.jpg" class="block w-full rounded-xl md:w-9/12" />
+             <img src="./../images/image-product-2.jpg" class="block w-full sm:rounded-xl md:w-9/12" />
              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixe "></div>
            </div> 
          </div>
 
          <div class="carousel-item relative float-left w-full">
            <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-             <img src="./../images/image-product-3.jpg" class="block w-full rounded-xl md:w-9/12" />
+             <img src="./../images/image-product-3.jpg" class="block w-full sm:rounded-xl md:w-9/12" />
              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div> 
            </div>
          </div>
 
          <div class="carousel-item relative float-left w-full">
           <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%;">
-            <img src="./../images/image-product-4.jpg" class="block w-full rounded-xl md:w-9/12" />
+            <img src="./../images/image-product-4.jpg" class="block w-full sm:rounded-xl md:w-9/12" />
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"></div> 
           </div>
         </div>
@@ -147,7 +148,7 @@
       
        </div>
       </div>
-      <!-- /mini gallery -->
+    <!-- /mini gallery -->
 
     
    <!--control previous - next-->
@@ -182,27 +183,30 @@
 
   <!-- /carousel -->
 
-  <div class="pl-6 pr-1 md:w-9/12">
+  <div class="pl-3 pr-1 tracking-widest sm:w-11/12 md:w-full md:pl-0 lg:w-10/12 lg:pt-12  xl:w-3/5">
       <div class="text-xs tx-orange font-bold  pt-3 pb-2  ">SNEAKERS COMPANY</div>
       <div class="tx-vark-blue lh-sm text-3xl font-bold mb-2 ">Fall Limited Edition Sneakers</div>
       <p class=" tx-dark-blue text-base ">These low-profile sneakers are your perfect casual wear companion. Featuring a 
         durable rubber outer sole, they'll withstand everything the weather can offer.</p>
       <div class="container-sm my-4">
-        <div class="row gap-3">
+        <div class="row gap-2 sm:gap-0">
           <div class="col-3 pl-0 tx-vark-blue text-2xl font-bold ">$125.00</div>
-          <div class="col-2 font-bold text-sm tx-orange bgr-pale-orange rounded-sm px-0 w-9 self-center text-center">50%</div>
-          <div class="text-base col-2 col-sm-3 offset-4 offset-sm-4 font-bold text-slate-400/70 line-through self-center ">$250.00</div>
+          <div class="col-2 font-bold text-base tx-orange bgr-pale-orange rounded-sm px-0 w-9 self-center text-center md:ml-3 lg:ml-0 xl:-ml-12">50%</div>
+          <div class="row contents sm:flex">
+            <div class="text-base col-2  font-bold text-slate-400/70 line-through self-center pl-36 sm:pl-0">$250.00</div>
+          </div>
         </div>
       </div>
-      <div class="flex d-flex font-bold text-sm justify-content-between pl-5 pr-7 mb-4 ">
+      <div class="flex col-12 font-bold text-base justify-content-between w-full pl-5 pr-7 mb-4 sm:absolute sm:w-40 sm:pl-0  ">
         <span class="self-center ">
           <img class="w-3/4" src="./../images/icon-minus.svg" alt=""></span>
            0 
         <span class="self-center ">
-          <img class="w-3/4" src="./../images/icon-plus.svg" alt=""></span></div>
+          <img class="w-3/4" src="./../images/icon-plus.svg" alt=""></span>
+      </div>
 
-          <div class="container mb-4">
-            <button type="button" class="col-10 btn btn-warning w-full py-2.5 bgr-orange text-white font-bold text-sm">
+          <div class=" mb-4 pr-5  sm:ml-40 sm:-mt-2 sm:pr-0 ">
+            <button type="button" class=" btn btn-warning  py-2.5 bgr-orange text-white font-bold text-sm w-full">
               <div class="inline-block w-3 mr-2">
                 <img src="./../images/icon-cart-white.svg" alt="">
               </div>
