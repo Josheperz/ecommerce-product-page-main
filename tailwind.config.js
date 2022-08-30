@@ -15,7 +15,13 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
-    }
+    },
+    screens: {
+      sm: '400px',
+      md: '576px',
+      lg: '976px',
+      xl: '1440px',
+    },
   },
   plugins: [],
 }
