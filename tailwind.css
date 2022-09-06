@@ -52,3 +52,52 @@ body {
   border-radius: 50% !important;
    border: 1px solid var(--orange)!important;
 }
+.not-visible {
+  display: none
+}
+.right-close-icon {
+  right:102px;
+}
+
+@media (max-width:578px){
+  
+  .right-close-icon {
+  display:none
+  }
+
+}
+@media (min-width:768px){
+  
+  .right-close-icon {
+  right: 196px;
+  }
+
+}
+@media (min-width:980px){
+  
+  .right-close-icon {
+  right: 303px;
+  }
+
+}
+@media (min-width:1200px){
+  
+  .right-close-icon {
+  right: 410px;
+  }
+
+}
+@media (min-width:1400px){
+  
+  .right-close-icon {
+  right: 509px;
+  }
+
+}
+ @media (min-width:1440px){
+  
+  .right-close-icon {
+  right: 528px;
+  }
+
+} 

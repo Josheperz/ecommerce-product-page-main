@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="./css/tailwind.css">
   <!-- font Kumbh Sans -->
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <!-- lab.css -->
-  <link rel="stylesheet" href="./../lab.css">
+  
+ 
 
 </head>
 <body>
@@ -47,7 +47,7 @@
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link border-current hover:border-b-4  border-orange-500  pt-3 pb-5" href="#" aria-expanded="false">
+              <a class="nav-link lg:hover:border-b-4  border-orange-500  pt-3 pb-5" href="#" aria-expanded="false">
                   Contact
               </a>
             </li>
@@ -70,9 +70,16 @@
  
 <main>
 
-<div class="grid md:grid-flow-col   ">
-  
-  <zoom-gallery></zoom-gallery>
+  <div class="grid md:grid-flow-col">
+    
+   <!-- gallery zoom -->
+  <div >
+      <div id="container-zoom-gallery" class=""> 
+        <!-- <zoom-gallery></zoom-gallery> -->
+      </div> 
+      <svg id="icon-close" class="absolute not-visible z-20 top-7 right-close-icon "  width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path class=" hover:fill-orange-500" d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+  </div> 
+   <!--/gallery zoom -->
 
 <!-- carousel -->
  
@@ -81,7 +88,7 @@
     <div id="carouselExampleCaptions" class="carousel p-0 slide col-sm-11 sm:mb-20 md:ml-24" data-bs-ride="carousel">
     
  <!-- main gallery -->
-    <div class="relative ">
+    <div id="main-gallery" class="relative cursor-pointer">
        <div class="carousel-inner relative w-full overflow-hidden">
 
          <div class="carousel-item active relative float-left w-full">
@@ -112,50 +119,53 @@
           </div>
         </div>
       </div>
- <!-- /main gallery -->
- <!-- mini gallery -->
-     <div class="carousel-indicators absolute right-0 -bottom-10 left-0 p-0 mx-0 hidden sm:block md:w-9/12">
+  </div>
+<!-- /main gallery -->
+    <!-- mini gallery -->
+    <div class="carousel-indicators absolute right-0 -bottom-10 left-0 p-0 mx-0 hidden sm:block md:w-9/12">
       <div class="flex justify-between ">            
        <button 
-           class="active "
+           class="active bg-transparent"
            type="button"
            data-bs-target="#carouselExampleCaptions"
            aria-current="true"
            data-bs-slide-to="0"
            aria-label="Slide 1"
-           style=" width:70px; margin-left:0"
-         ><img src="./../images/image-product-1-thumbnail.jpg" alt="" class="block rounded-xl"></button>
+           style=" width:70px; margin-left:0">
+           <img src="./../images/image-product-1-thumbnail.jpg" alt="" class="hover:border-3 border-orange-500 block rounded-xl">
+        </button>
          <button
-          
+         class="bg-transparent"
            type="button"
            data-bs-target="#carouselExampleCaptions"
            data-bs-slide-to="1"
            aria-label="Slide 2"
-           style=" width:70px;margin-left:20px"
-         ><img src="./../images/image-product-2-thumbnail.jpg" alt="" class="block rounded-xl"></button>
+           style=" width:70px;margin-left:20px">
+           <img src="./../images/image-product-2-thumbnail.jpg" alt="" class="hover:border-3 border-orange-500 block rounded-xl">
+          </button>
          <button
-           class=""
+           class="bg-transparent"
            type="button"
            data-bs-target="#carouselExampleCaptions"
            data-bs-slide-to="2"
            aria-label="Slide 3"
-           style=" width:70px; margin-left:20px"
-         ><img src="./../images/image-product-3-thumbnail.jpg" alt="" class="block rounded-xl "></button>
+           style=" width:70px; margin-left:20px">
+           <img src="./../images/image-product-3-thumbnail.jpg" alt="" class="hover:border-3 border-orange-500 block rounded-xl ">
+          </button>
          <button
-         class=""
+         class="bg-transparent"
          type="button"
          data-bs-target="#carouselExampleCaptions"
          data-bs-slide-to="3"
          aria-label="Slide 4"
-         style=" width:70px; margin-left:20px;margin-right:0 "
-        ><img src="./../images/image-product-4-thumbnail.jpg" alt="" class="block rounded-xl "></button>
+         style=" width:70px; margin-left:20px;margin-right:0 ">
+         <img src="./../images/image-product-4-thumbnail.jpg" alt="" class="hover:border-3 border-orange-500 block rounded-xl ">
+        </button>
         </div>
       
        </div>
-      </div>
-    <!-- /mini gallery -->
+  <!-- /mini gallery -->
 
-    
    <!--control previous - next-->
     <div class="block  sm:hidden">
      <button
@@ -188,13 +198,11 @@
 
   <!-- /carousel -->
 
-    <!-- gallery menus -->
-   
-    <!--/gallery menus -->
+    
 
 <!-- Product description -->
   <div class="pl-3 pr-1 tracking-widest sm:w-11/12 md:w-full md:pl-0 lg:w-10/12 lg:pt-12  xl:w-3/4">
-      <div class="text-xs tx-orange font-bold  pt-3 pb-2  ">SNEAKERS COMPANY</div>
+      <div class="text-xs tx-orange font-bold  pt-3 pb-2 ">SNEAKERS COMPANY</div>
       <div class="tx-vark-blue lh-sm text-3xl font-bold mb-2 ">Fall Limited Edition Sneakers</div>
       <p class=" tx-dark-blue text-base ">These low-profile sneakers are your perfect casual wear companion. Featuring a 
         durable rubber outer sole, they'll withstand everything the weather can offer.</p>
@@ -209,10 +217,10 @@
       </div>
       <div class="flex col-12 font-bold text-base justify-content-between w-full pl-5 pr-7 mb-4 sm:absolute sm:w-40 sm:pl-0  ">
         <span class="self-center ">
-          <img class="w-3/4" src="./../images/icon-minus.svg" alt=""></span>
+          <img class="w-3/4 cursor-pointer" src="./../images/icon-minus.svg" alt=""></span>
            0 
         <span class="self-center ">
-          <img class="w-3/4" src="./../images/icon-plus.svg" alt=""></span>
+          <img class="w-3/4 cursor-pointer" src="./../images/icon-plus.svg" alt=""></span>
       </div>
 
           <div class=" mb-4 pr-5  sm:ml-40 sm:-mt-2 sm:pr-0 ">
@@ -226,10 +234,9 @@
     </div>
 <!--/ Product description -->       
   
-    
-     
-    
 </div>
+
+
 </main> 
 
 
