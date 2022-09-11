@@ -1,3 +1,4 @@
+
 class zoomGallery extends HTMLElement {
   constructor(){
     super();
